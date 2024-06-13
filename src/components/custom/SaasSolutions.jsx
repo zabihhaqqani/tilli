@@ -1,22 +1,16 @@
 import images from '@/data/images';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-} from '@/components/ui/carousel';
+import ImageCarousel from './ImageCarousel';
 
 const SaaSSolutions = () => {
     return (
         <div className="flex flex-col items-center text-center pt-[10px]  bg-[#F5F7FA] pb-3 md:pt-[100px] lg:[110px] ">
             <div className="flex items-center md:flex-row flex-col">
                 <div className="max-w-[450px] text-left mx-3">
-                    <h1 className="text-4xl font-bold text-black ">
+                    <h1 className=" font-bold text-black md:text-3xl text-2xl  ">
                         A Cloud-Based Customer Communication Platform
                         as a Service and a Global Payment Stack
                     </h1>
-                    <p className="text-xl text-gray-700 mt-4 my-1">
+                    <p className=" text-gray-700 mt-4 my-1 text-[0.9rem]">
                         Create an integrated payment and communication
                         experience with Nudge, a Customer
                         Communication Platform that brings WhatsApp,
@@ -26,7 +20,7 @@ const SaaSSolutions = () => {
                         card, debit card, netbanking, ACH, UPI,
                         wallet, and APMs.
                     </p>
-                    <p className="text-base text-gray-600 mt-2 max-w-2xl my-1">
+                    <p className="text-base text-gray-600 mt-2 max-w-2xl my-1 text-[0.9rem]">
                         Get started with Tilli’s Customer
                         Communication
                     </p>
@@ -44,43 +38,12 @@ const SaaSSolutions = () => {
                     </div>
                 </div>
 
-                <Carousel className="md:w-[80%] object-cover block h-[auto] md:max-w-[600px] md:min-w-[350px] md:ml-[50px] md:px-3  m-0 p-0 w-[70%]">
-                    <CarouselContent>
-                        <CarouselItem>
-                            <img
-                                src="https://tilli.pro/wp-content/uploads/2023/12/tilli-software-products-2024.png"
-                                alt="img"
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            <img
-                                src="https://tilli.pro/wp-content/uploads/2023/12/nudge-customer-communication-platform-live-dashboard.png"
-                                alt="img"
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            {' '}
-                            <img
-                                src="https://tilli.pro/wp-content/uploads/2023/12/tilli-cx-customer-engagement-live-dashboard.png"
-                                alt="img"
-                            />
-                        </CarouselItem>
-                        <CarouselItem>
-                            {' '}
-                            <img
-                                src="https://tilli.pro/wp-content/uploads/2023/12/monay-payments-stack-dashboard.png"
-                                alt="img"
-                            />
-                        </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                </Carousel>
+                <ImageCarousel />
             </div>
             <img
                 src="https://tilli.pro/wp-content/uploads/2022/04/certifications.png"
                 alt="certificates-img"
-                className="md:max-w-[450px] h-auto"
+                className="md:max-w-[450px] h-auto object-cover"
             />
             <div className="text-gray-500 text-sm mt-12">
                 TRUSTED BY BUSINESSES AROUND THE WORLD

@@ -8,12 +8,12 @@ const MenuSection = ({ title, submenu }) => (
     <NavigationMenuItem>
         <NavigationMenuTrigger>{title}</NavigationMenuTrigger>
         <NavigationMenuContent className="p-3">
-            <ul className="grid w-[400px] gap-3 p-2 md:w-[500px] md:grid-cols-1 lg:w-[280px] text-[12px]">
-                {submenu.map((item) => (
+            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                {submenu.map((item, index) => (
                     <a
-                        key={item.title}
                         href={item.url}
-                        className="p-2 cursor-pointer hover:bg-gray-200 rounded-md transition-all block px-4"
+                        key={index}
+                        className="text-[12px]"
                     >
                         {item.title}
                     </a>

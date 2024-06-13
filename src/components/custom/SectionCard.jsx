@@ -3,7 +3,7 @@ import React from 'react';
 const SectionCard = ({ data, index }) => {
     return (
         <div
-            className={`flex flex-col items-center text-center justify-center   ${
+            className={`flex flex-col items-center text-center justify-center mb-4 pb4   ${
                 index % 2 !== 0 ? 'bg-[#F5F7FA]' : ''
             } `}
         >
@@ -12,7 +12,7 @@ const SectionCard = ({ data, index }) => {
                     <span className="bg-blue-800 py-1 rounded-[80px] inline-block text-white px-5 my-2">
                         {data.title}
                     </span>
-                    <h1 className="text-4xl font-bold text-black ">
+                    <h1 className="md:text-3xl text-2xl font-bold text-black ">
                         {data.category}
                     </h1>
                     <p className=" text-gray-700 mt-4 my-1 text-[0.9rem]">
